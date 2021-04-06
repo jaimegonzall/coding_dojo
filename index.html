@@ -8,13 +8,13 @@
     <meta name="description" content="https://codingdojo.org/kata/Bowling/">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Jaime G. Llistó">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1>Coding Dojo ::: Bowling</h1>
     <ul>
-        <li>10 bolos</li>
-        <li>Cada bolo derribado es 1 punto</li>
-        <li>10 turnos</li>
+        <li>10 bolos, cada uno derribado es 1 punto.</li>
+        <li>Cada jugador tiene 10 turnos.</li>
         <li>Si no se tiran todos los bolos a la primera se puede tirar una vez más.</li>
         <li>'Spare': si al segundo intento se derriban todos los bolos la puntuación será de 10 más los puntos conseguidos en el próximo lanzamiento.</li>
         <li>'Strike': si se derriban todos los bolos a la primera la puntución será de 10 más el número de bolos derribados en las siguientes dos tiradas.</li>
@@ -29,6 +29,62 @@
         <li>Fallo: -</li>
         <li>Podría crear una tercera final de bonificaciones.</li>
     </ul>
+
+    <table id="scoreboard">
+        <caption>Mi tablero de bolos</caption>
+        <tr>
+            <th>Turnos</th>
+            <th>1 frame</th>
+            <th>2 frame</th>
+            <th>3 frame</th>
+            <th>4 frame</th>
+            <th>5 frame</th>
+            <th>6 frame</th>
+            <th>7 frame</th>
+            <th>8 frame</th>
+            <th>9 frame</th>
+            <th>10 frame</th>
+        </tr>
+        <tr>
+            <th>Lanzamientos</th>
+            <th><button id="btn01">1er lanzamiento</button></th>
+            <th>2 frame</th>
+            <th>3 frame</th>
+            <th>4 frame</th>
+            <th>5 frame</th>
+            <th>6 frame</th>
+            <th>7 frame</th>
+            <th>8 frame</th>
+            <th>9 frame</th>
+            <th>10 frame</th>
+        </tr>
+        <tr>
+            <th>Puntuación</th>
+            <th id="fr_01"></th>
+            <th id="fr_02"></th>
+            <th id="fr_03"></th>
+            <th id="fr_04"></th>
+            <th id="fr_05"></th>
+            <th id="fr_06"></th>
+            <th id="fr_07"></th>
+            <th id="fr_08"></th>
+            <th id="fr_09"></th>
+            <th id="fr_10"></th>
+        </tr>
+        <tr>
+            <th>BONUS</th>
+            <th id="bn_01"></th>
+            <th id="bn_02"></th>
+            <th id="bn_03"></th>
+            <th id="bn_04"></th>
+            <th id="bn_05"></th>
+            <th id="bn_06"></th>
+            <th id="bn_07"></th>
+            <th id="bn_08"></th>
+            <th id="bn_09"></th>
+            <th id="bn_10"></th>
+        </tr>
+    </table>
     
 
 
